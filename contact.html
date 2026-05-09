@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - flyhigh360 | Get Your Drone Solutions Quote</title>
+    <meta name="description" content="Contact flyhigh360 for professional drone services. Get quotes for aerial surveys, agricultural monitoring, infrastructure inspection, and more.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>flyhigh360</h2></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="industries.html" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="contact-page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Ready to elevate your project with professional drone solutions? Let's discuss your requirements.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Multiple Ways to Reach Us</h2>
+                <p class="section-subtitle">Choose the most convenient way to start your project discussion</p>
+            </div>
+            
+            <div class="contact-methods-grid">
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our experts for immediate assistance and project consultation.</p>
+                    <p><strong>+91 98765 43210</strong></p>
+                    <p><strong>+91 87654 32109</strong></p>
+                    <p class="hours">Mon-Sat: 9:00 AM - 7:00 PM IST</p>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us detailed project requirements and get comprehensive proposals.</p>
+                    <p><strong>info@flyhigh360.com</strong></p>
+                    <p><strong>projects@flyhigh360.com</strong></p>
+                    <p class="hours">Response within 24 hours</p>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Office</h3>
+                    <p>Meet our team in person for detailed project discussions and demonstrations.</p>
+                    <p><strong>Bangalore, Karnataka</strong></p>
+                    <p>Electronic City, Phase 1</p>
+                    <p class="hours">By appointment only</p>
+                </div>
+            </div>
+
+            <!-- Main Contact Form -->
+            <div class="contact-grid">
+                <div class="contact-form-large">
+                    <h3>Send Us a Message</h3>
+                    <p>Fill out the form below and we'll get back to you within 24 hours with a detailed response.</p>
+                    
+                    <div class="message" id="form-message"></div>
+                    
+                    <form class="contact-form-main" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Required *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="aerial-survey">Aerial Survey & Mapping</option>
+                                    <option value="agriculture">Agricultural Drone Services</option>
+                                    <option value="inspection">Infrastructure Inspection</option>
+                                    <option value="photography">Aerial Photography</option>
+                                    <option value="surveillance">Surveillance & Monitoring</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="location">Project Location</label>
+                            <input type="text" id="location" name="location" placeholder="City, State">
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="urgent">Urgent (Within 1 week)</option>
+                                <option value="soon">Soon (1-4 weeks)</option>
+                                <option value="planned">Planned (1-3 months)</option>
+                                <option value="future">Future (3+ months)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="budget">Estimated Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-50k">Under ₹50,000</option>
+                                <option value="50k-1l">₹50,000 - ₹1,00,000</option>
+                                <option value="1l-5l">₹1,00,000 - ₹5,00,000</option>
+                                <option value="5l-10l">₹5,00,000 - ₹10,00,000</option>
+                                <option value="above-10l">Above ₹10,00,000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Please describe your project requirements, area to be covered, specific deliverables needed, and any other relevant details..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for industry updates and case studies
+                            </label>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-large">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Business Hours</h4>
+                        </div>
+                        <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                        Saturday: 9:00 AM - 5:00 PM<br>
+                        Sunday: Emergency calls only</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>24/7 Emergency Support</h4>
+                        </div>
+                        <p>For urgent drone services and emergency response situations, our team is available round the clock.</p>
+                        <p><strong>Emergency: +91 98765 43210</strong></p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>Certifications</h4>
+                        </div>
+                        <p>DGCA certified pilots, ISO 9001:2015 quality management, and comprehensive insurance coverage for all operations.</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Data Security</h4>
+                        </div>
+                        <p>All project data is handled with strict confidentiality and security protocols. We ensure complete data privacy and protection.</p>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Interactive Map<br>Bangalore, Karnataka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions about our drone services</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How quickly can you start a project?</h4>
+                    <p>For standard projects, we can typically begin within 3-5 business days. Emergency and urgent projects can be accommodated within 24-48 hours, subject to weather conditions and regulatory approvals.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What areas do you serve?</h4>
+                    <p>We provide drone services across India, with primary operations in Karnataka, Maharashtra, Gujarat, Punjab, and Delhi NCR. We can deploy teams to any location based on project requirements.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do you handle regulatory approvals?</h4>
+                    <p>Yes, we manage all necessary DGCA permissions, NOCs, and regulatory compliance for your project. Our team ensures all flights are conducted within legal frameworks.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What deliverables do you provide?</h4>
+                    <p>Depending on the service, we provide high-resolution images, videos, 3D models, orthomosaics, point clouds, GIS data, detailed reports, and analysis. All data is delivered in industry-standard formats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Join hundreds of satisfied clients who trust flyhigh360 for their drone technology needs. Let's discuss your project today.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+919876543210" class="btn btn-primary btn-large">Call Now</a>
+                    <a href="mailto:info@flyhigh360.com" class="btn btn-secondary btn-large">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>flyhigh360</h3>
+                    <p>Advanced drone solutions for a smarter future. Transforming industries through innovation, safety, and precision.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Aerial Survey</a></li>
+                        <li><a href="services.html">Agricultural Drones</a></li>
+                        <li><a href="services.html">Infrastructure Inspection</a></li>
+                        <li><a href="services.html">Surveillance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="industries.html">Agriculture</a></li>
+                        <li><a href="industries.html">Construction</a></li>
+                        <li><a href="industries.html">Mining</a></li>
+                        <li><a href="industries.html">Smart Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>info@flyhigh360.com</p>
+                    <p>+91 98765 43210</p>
+                    <p>Bangalore, Karnataka</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 flyhigh360. All rights reserved. | Pioneering India's aerial intelligence revolution.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - flyhigh360 | Drone Photography & Project Showcase</title>
+    <meta name="description" content="Explore flyhigh360's portfolio of aerial photography, surveying projects, and drone technology applications across various industries in India.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>flyhigh360</h2></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="industries.html" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Project Gallery</h1>
+            <p>Showcasing precision, innovation, and excellence across diverse drone projects</p>
+        </div>
+    </section>
+
+    <!-- Gallery Page -->
+    <section class="gallery-page">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <a href="#" class="filter-btn active" data-filter="all">All Projects</a>
+                <a href="#" class="filter-btn" data-filter="survey">Aerial Survey</a>
+                <a href="#" class="filter-btn" data-filter="agriculture">Agriculture</a>
+                <a href="#" class="filter-btn" data-filter="construction">Construction</a>
+                <a href="#" class="filter-btn" data-filter="inspection">Inspection</a>
+                <a href="#" class="filter-btn" data-filter="photography">Photography</a>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid-large">
+                <!-- Aerial Survey Projects -->
+                <div class="gallery-item-large" data-category="survey">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image aerial-survey"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Highway Infrastructure Mapping</h3>
+                            <p>Comprehensive topographic survey for 50km highway expansion project in Maharashtra. Delivered high-precision 3D models and contour maps for construction planning.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Maharashtra</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-large" data-category="survey">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #059669, #047857);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Urban Development Survey</h3>
+                            <p>Large-scale mapping for smart city development in Pune. Created detailed GIS database for urban planning and infrastructure development.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Pune</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agriculture Projects -->
+                <div class="gallery-item-large" data-category="agriculture">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image agriculture"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Precision Agriculture Monitoring</h3>
+                            <p>Multi-spectral crop health analysis for 200-hectare wheat farm in Punjab. Identified pest infestations early, resulting in 18% yield improvement.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Punjab</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-large" data-category="agriculture">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #84cc16, #65a30d);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Cotton Crop Spraying</h3>
+                            <p>Precision spraying operation for cotton fields in Gujarat. Reduced chemical usage by 35% while maintaining crop protection effectiveness.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Gujarat</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Construction Projects -->
+                <div class="gallery-item-large" data-category="construction">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image construction"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Metro Construction Progress</h3>
+                            <p>Monthly progress monitoring for Delhi Metro Phase 4 construction. Provided detailed documentation and progress reports for stakeholders.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Delhi</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-large" data-category="construction">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #dc2626, #b91c1c);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Bridge Construction Monitoring</h3>
+                            <p>Safety and progress monitoring for major bridge construction project. Ensured compliance with safety protocols and timeline adherence.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Karnataka</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inspection Projects -->
+                <div class="gallery-item-large" data-category="inspection">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image inspection"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Power Line Inspection</h3>
+                            <p>Thermal and visual inspection of 100km transmission lines in Rajasthan. Identified potential failure points and maintenance requirements.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Rajasthan</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-large" data-category="inspection">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #0891b2, #0e7490);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Industrial Facility Inspection</h3>
+                            <p>Comprehensive safety inspection of petrochemical facility in Gujarat. Provided detailed thermal analysis and structural assessment reports.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Gujarat</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography Projects -->
+                <div class="gallery-item-large" data-category="photography">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #be185d, #9d174d);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Luxury Resort Marketing</h3>
+                            <p>Stunning aerial photography and videography for premium resort in Goa. Created compelling marketing content showcasing property amenities and location.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Goa</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-large" data-category="photography">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Corporate Event Coverage</h3>
+                            <p>Aerial coverage of major technology conference in Bangalore. Captured dynamic footage of venue, attendees, and surrounding cityscape.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Bangalore</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Projects -->
+                <div class="gallery-item-large" data-category="survey">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #0d9488, #0f766e);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Mining Site Survey</h3>
+                            <p>Volumetric analysis and stockpile measurement for iron ore mining operation in Odisha. Provided accurate inventory data for operational planning.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Odisha</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-large" data-category="agriculture">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #ca8a04, #a16207);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Rice Paddy Monitoring</h3>
+                            <p>Comprehensive crop health monitoring for rice cultivation in West Bengal. Optimized irrigation scheduling and nutrient management strategies.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> West Bengal</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-large" data-category="inspection">
+                    <div class="gallery-image-large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #dc2626, #991b1b);"></div>
+                        <div class="gallery-overlay-large">
+                            <h3>Solar Farm Inspection</h3>
+                            <p>Thermal inspection of 50MW solar installation in Rajasthan. Identified underperforming panels and maintenance requirements for optimal efficiency.</p>
+                            <div class="project-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Rajasthan</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Impact in Numbers</h2>
+                <p class="section-subtitle">Delivering measurable results across diverse projects</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>500+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3>10,000+</h3>
+                    <p>Hectares Surveyed</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>5,000+</h3>
+                    <p>Flight Hours</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>100+</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Join our growing list of satisfied clients and experience the flyhigh360 difference in drone technology solutions.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Get Your Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>flyhigh360</h3>
+                    <p>Advanced drone solutions for a smarter future. Transforming industries through innovation, safety, and precision.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Aerial Survey</a></li>
+                        <li><a href="services.html">Agricultural Drones</a></li>
+                        <li><a href="services.html">Infrastructure Inspection</a></li>
+                        <li><a href="services.html">Surveillance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="industries.html">Agriculture</a></li>
+                        <li><a href="industries.html">Construction</a></li>
+                        <li><a href="industries.html">Mining</a></li>
+                        <li><a href="industries.html">Smart Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>info@flyhigh360.com</p>
+                    <p>+91 98765 43210</p>
+                    <p>Bangalore, Karnataka</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 flyhigh360. All rights reserved. | Pioneering India's aerial intelligence revolution.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>
