@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" fill="none">
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5b342"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <style>
+      @keyframes fly {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(3px, -3px); }
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes spinr {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(-360deg); }
+      }
+      .drone   { animation: fly 2.5s ease-in-out infinite; }
+      .blur1   { animation: spin .25s linear infinite; transform-origin: 24px 20px; }
+      .blur2   { animation: spinr .25s linear infinite; transform-origin: 56px 20px; }
+      .blur3   { animation: spinr .25s linear infinite; transform-origin: 24px 60px; }
+      .blur4   { animation: spin .25s linear infinite; transform-origin: 56px 60px; }
+    </style>
+  </defs>
+
+  <g class="drone">
+    <!-- drone body - main chassis -->
+    <rect x="30" y="32" width="24" height="16" rx="3" fill="#f5b342"/>
+    <!-- body highlight -->
+    <rect x="32" y="34" width="20" height="4" rx="1.5" fill="#fef3c7" opacity="0.3"/>
+
+    <!-- arm top-left -->
+    <line x1="36" y1="32" x2="22" y2="20" stroke="#f5b342" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- arm top-right -->
+    <line x1="48" y1="32" x2="62" y2="20" stroke="#f5b342" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- arm bottom-left -->
+    <line x1="36" y1="48" x2="22" y2="60" stroke="#f5b342" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- arm bottom-right -->
+    <line x1="48" y1="48" x2="62" y2="60" stroke="#f5b342" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- rotor housings -->
+    <circle cx="22" cy="20" r="5" fill="#13172b" stroke="#f5b342" stroke-width="1.5"/>
+    <circle cx="62" cy="20" r="5" fill="#13172b" stroke="#f5b342" stroke-width="1.5"/>
+    <circle cx="22" cy="60" r="5" fill="#13172b" stroke="#f5b342" stroke-width="1.5"/>
+    <circle cx="62" cy="60" r="5" fill="#13172b" stroke="#f5b342" stroke-width="1.5"/>
+
+    <!-- rotor blur lines -->
+    <line x1="12" y1="20" x2="32" y2="20" stroke="#f5b342" stroke-width="1.5" opacity="0.4" class="blur1"/>
+    <line x1="52" y1="20" x2="72" y2="20" stroke="#f5b342" stroke-width="1.5" opacity="0.4" class="blur2"/>
+    <line x1="12" y1="60" x2="32" y2="60" stroke="#f5b342" stroke-width="1.5" opacity="0.4" class="blur3"/>
+    <line x1="52" y1="60" x2="72" y2="60" stroke="#f5b342" stroke-width="1.5" opacity="0.4" class="blur4"/>
+
+    <!-- camera / sensor underneath -->
+    <rect x="36" y="48" width="8" height="5" rx="1.5" fill="#f5b342" opacity="0.5"/>
+    <circle cx="40" cy="51" r="2" fill="#0b0d17" stroke="#f5b342" stroke-width="0.5"/>
+
+    <!-- landing gear -->
+    <line x1="34" y1="48" x2="32" y2="55" stroke="#f5b342" stroke-width="1" opacity="0.4"/>
+    <line x1="46" y1="48" x2="48" y2="55" stroke="#f5b342" stroke-width="1" opacity="0.4"/>
+
+    <!-- motion trail lines -->
+    <line x1="5" y1="35" x2="18" y2="35" stroke="#f5b342" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+    <line x1="2" y1="40" x2="14" y2="40" stroke="#f5b342" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+    <line x1="6" y1="45" x2="16" y2="45" stroke="#f5b342" stroke-width="1.5" stroke-linecap="round" opacity="0.15"/>
+  </g>
+
+  <!-- FLYHIGH text -->
+  <text x="100" y="45" font-family="Inter,'Segoe UI',sans-serif" font-size="38" font-weight="800" fill="#f1f5f9" letter-spacing="4">FLYHIGH</text>
+  <!-- 360 text -->
+  <text x="100" y="78" font-family="Inter,'Segoe UI',sans-serif" font-size="20" font-weight="600" fill="#f5b342" letter-spacing="10" opacity="0.85">360</text>
+</svg>
