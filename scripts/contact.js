@@ -79,18 +79,25 @@ document.addEventListener('DOMContentLoaded', () => {
         setLoadingState(true);
         
         try {
-            // Simulate form submission (replace with actual API call)
-            await simulateFormSubmission(formData);
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
             
-            showMessage('Thank you for your message! We will get back to you within 24 hours.', 'success');
-            contactForm.reset();
-            
-            // Track form submission (analytics)
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'form_submit', {
-                    event_category: 'Contact',
-                    event_label: formData.get('service')
-                });
+            if (response.ok) {
+                showMessage('Thank you for your message! We will get back to you within 24 hours.', 'success');
+                contactForm.reset();
+                
+                // Track form submission (analytics)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit', {
+                        event_category: 'Contact',
+                        event_label: formData.get('service')
+                    });
+                }
+            } else {
+                showMessage('Sorry, there was an error sending your message. Please try again or contact us directly.', 'error');
             }
             
         } catch (error) {
@@ -100,20 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
             setLoadingState(false);
         }
     });
-
-    // Simulate form submission (replace with actual implementation)
-    const simulateFormSubmission = (formData) => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                // Simulate success/failure
-                if (Math.random() > 0.1) { // 90% success rate
-                    resolve();
-                } else {
-                    reject(new Error('Simulated network error'));
-                }
-            }, 2000);
-        });
-    };
 
     // Real-time validation
     const inputs = contactForm.querySelectorAll('input, textarea, select');
